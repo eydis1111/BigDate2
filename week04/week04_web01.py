@@ -13,8 +13,8 @@ texts = urls.decode('utf-8')
 print(texts)
 
 """
-지역코드 : 184
-https://www.kma.go.kr/weather/forecast/mid-term-rss3.jsp?stnId=184
+지역코드 : 105
+https://www.kma.go.kr/weather/forecast/mid-term-rss3.jsp?stnId=105
 
 Process finished with exit code 0
 """
