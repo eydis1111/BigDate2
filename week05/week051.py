@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from sklearn.linear_model import LinearRegression
-#from sklearn.neighbors import KNeighborsRegressor
+#from sklearn.linear_model import LinearRegression
+from sklearn.neighbors import KNeighborsRegressor
 
 lifesat = pd.read_csv("https://github.com/ageron/data/raw/main/lifesat/lifesat.csv")
 X = lifesat[["GDP per capita (USD)"]].values
@@ -14,8 +14,8 @@ lifesat.plot(kind='scatter', grid=True, x="GDP per capita (USD)", y="Life satisf
 plt.axis([23_500, 62_500, 4, 9])
 plt.show()
 
-model = LinearRegression()  # 선형 회귀 모델 적용
-#model = KNeighborsRegressor(n_neighbors=3)  # 한국과 1인당 GDP가 가장 가까운 나라 셋
+#model = LinearRegression()  # 선형 회귀 모델 적용
+model = KNeighborsRegressor(n_neighbors=3)  # 한국과 1인당 GDP가 가장 가까운 나라 셋
 
 model.fit(X, y)
 

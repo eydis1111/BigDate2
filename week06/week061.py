@@ -16,7 +16,8 @@ plt.show()
 
 #model = LinearRegression()  # 선형 회귀 모델 적용
 #model = KNeighborsRegressor(n_neighbors=3)  # 한국과 1인당 GDP가 가장 가까운 나라 셋
-model = tgrun.LinearRegression()
+#model = tgrun.LinearRegression()
+model = tgrun.KNeighborsRegressor(3)
 
 model.fit(X, y)
 
