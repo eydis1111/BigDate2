@@ -10,7 +10,7 @@ url = api + '?' + urllib.parse.urlencode(values)
 
 urls = urllib.request.urlopen(url).read()
 texts = urls.decode('utf-8')
-print(texts)
+pricdnt(texts)
 
 """
 지역코드 : 105
