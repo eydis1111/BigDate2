@@ -1,1 +1,1 @@
-print("Git Confilct")
+print("Git Confilcdt")
